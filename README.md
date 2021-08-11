@@ -23,3 +23,7 @@ see class ```NumberService``` and ```application.properties```
 
 shared between all modules, contains .proto files
 see file ```service.proto```
+
+## gatling-load-tests
+
+maven powered gatling load tests tryout
