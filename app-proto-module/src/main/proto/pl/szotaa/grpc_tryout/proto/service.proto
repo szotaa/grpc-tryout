@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package pl.szotaa.grpc_tryout.proto;
+
+option java_multiple_files = true;
+option java_package = "pl.szotaa.grpc_tryout.proto";
+
+service InMemoryPersistenceService {
+  rpc addNumber (AddNumberRequest) returns (AddNumberResponse) {
+
+  }
+
+  rpc calculateAvg (CalculateAvgRequest) returns (CalculateAvgResponse) {
+
+  }
+}
+
+message AddNumberRequest {
+  int32 number = 1;
+}
+
+message AddNumberResponse {
+  repeated int32 number = 1;
+}
+
+message CalculateAvgRequest {
+
+}
+
+message CalculateAvgResponse {
+  double average = 1;
+}
